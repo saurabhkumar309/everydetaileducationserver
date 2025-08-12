@@ -13,8 +13,7 @@ await connectDB();
 // Allowed origins
 const allowedOrigins = [
   "http://localhost:5173",
-  // "https://tranquil-sunburst-bd42dd.netlify.app"
-   "https://everydetaileducation.vercel.app/"
+  "https://tranquil-sunburst-bd42dd.netlify.app"
 ];
 
 // CORS middleware
