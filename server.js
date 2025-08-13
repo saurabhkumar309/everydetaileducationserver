@@ -34,8 +34,6 @@ app.use(express.json());
 
 // Routes
 app.get("/", (req, res) => res.send("API Working"));
-app.use("/api/enquiry", EnquiryRoutes);
-
 app.use("/api/contact", contactRoutes);
 
 
