@@ -4,6 +4,7 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import connectDB from "./configs/mongodb.js";
 import contactRoutes from "./routes/contactRoutes.js";
+import EnquiryRoutes from "./routes/EnquiryRoutes.js";
 
 const app = express();
 
@@ -34,6 +35,7 @@ app.use(express.json());
 // Routes
 app.get("/", (req, res) => res.send("API Working"));
 app.use("/api/contact", contactRoutes);
+app.use("/api/enquiry", EnquiryRoutes);
 
 // Global error handler
 app.use((err, req, res, next) => {
