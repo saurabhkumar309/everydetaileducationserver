@@ -3,8 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import cookieParser from "cookie-parser";
 import connectDB from "./configs/mongodb.js";
-import contactRoutes from "./routes/contactRoutes.js";
-
+import formRoutes from "./routes/formRoutes.js";
 
 const app = express();
 
@@ -34,8 +33,7 @@ app.use(express.json());
 
 // Routes
 app.get("/", (req, res) => res.send("API Working"));
-app.use("/api/contact", contactRoutes);
-
+app.use("/api/form", formRoutes);
 
 
 // Global error handler
