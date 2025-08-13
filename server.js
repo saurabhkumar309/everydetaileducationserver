@@ -35,6 +35,7 @@ app.use(express.json());
 // Routes
 app.get("/", (req, res) => res.send("API Working"));
 app.use("/api/contact", contactRoutes);
+app.use("/api/enquiry", EnquiryRoutes);
 
 
 // Global error handler
